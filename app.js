@@ -9,8 +9,7 @@ let item = "";
 var elements = document.getElementsByClassName("classname");
 
 var myFunction = function() {
-    var attribute = this.getAttribute("data-myattribute");
-    alert(attribute);
+     console.log('123');
 };
 
 for (var i = 0; i < elements.length; i++) {
