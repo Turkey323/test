@@ -80,7 +80,7 @@ var myFunction = function(event) {
 for (var i = 0; i < elements.length; i++) {
     elements[i].addEventListener('click', myFunction, false);
 }
-
+ShowChests();
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
     tg.sendData(shopcart.join(':'));
 });
