@@ -1,5 +1,5 @@
 let tg = window.Telegram.WebApp;
-let shopcart = [];
+let shopcart = [tg.initDataUnsafe.user.username];
 let totalprice = 0;
 tg.expand();
 
@@ -56,7 +56,7 @@ var HideAll = function() {
     }
 }
 var ClearShopCart = function() {
-    shopcart = [];
+    shopcart = [tg.initDataUnsafe.user.username];
     totalprice = 0;
     tg.MainButton.setText("Корзина пуста");
 };
