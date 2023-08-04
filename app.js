@@ -17,8 +17,16 @@ var ShowChests = function() {
         elms[i].parentElement.style.display = 'inline-block';
 };
 
+var ShowSkins = function() {
+    console.log("Show Skins");
+    HideAll();
+    var elms = document.querySelectorAll("[id*='Skins_']");
+    for (var i = 0; i < elms.length; i++)
+        elms[i].parentElement.style.display = 'inline-block';
+};
+
 var ShowOthers = function() {
-    console.log("Show chests");
+    console.log("Show Others");
     HideAll();
     var elms = document.querySelectorAll("[id*='Others_']");
     for (var i = 0; i < elms.length; i++)
@@ -26,7 +34,7 @@ var ShowOthers = function() {
 };
 
 var ShowEventPasses = function() {
-    console.log("Show chests");
+    console.log("Show EventPasses");
     HideAll();
     var elms = document.querySelectorAll("[id*='EventPass_']");
     for (var i = 0; i < elms.length; i++)
@@ -34,8 +42,9 @@ var ShowEventPasses = function() {
 };
 
 var ShowBundles = function() {
+    console.log("Show Bundles");
     HideAll();
-    var elms = document.querySelectorAll("[id*='Bundles']");
+    var elms = document.querySelectorAll("[id*='Bundles_']");
     for (var i = 0; i < elms.length; i++)
         elms[i].parentElement.style.display = 'inline-block';
 };
