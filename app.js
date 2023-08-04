@@ -68,7 +68,12 @@ var myFunction = function(event) {
       skinname = event.srcElement.id + "*" + window.prompt("Введите название образа","");
     }
     shopcart.push(skinname);
-    totalprice = totalprice + parseInt(event.srcElement.innerHTML);
+    totalprice = totalprice + parseInt(event.srcElement.value);
+    if (event.srcElement.innerHTML.includes("р"))
+    {
+        event.srcElement.innerHTML = "0";
+    }
+    event.srcElement.innerHTML = (parseInt(event.srcElement.innerHTML)+1).toString();
     console.log("Вы выбрали товара на " + totalprice + " рублей.!");
     console.log(shopcart.join(':'));
     tg.MainButton.setText("Вы выбрали товара на " + totalprice + " рублей.!");
