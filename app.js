@@ -1,5 +1,5 @@
 let tg = window.Telegram.WebApp;
-let shopcart = [tg.initDataUnsafe.user.username];
+let shopcart = [];
 let totalprice = 0;
 tg.expand();
 
@@ -56,7 +56,8 @@ var HideAll = function() {
     }
 }
 var ClearShopCart = function() {
-    shopcart = [tg.initDataUnsafe.user.username];
+    shopcart = [];
+    shopcart.push(tg.initDataUnsafe.user.username);
     totalprice = 0;
     tg.MainButton.setText("Корзина пуста");
 };
@@ -78,7 +79,7 @@ for (var i = 0; i < elements.length; i++) {
     elements[i].addEventListener('click', myFunction, false);
 }
 
-
+ClearShopCart();
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
     tg.sendData(shopcart.join(':'));
