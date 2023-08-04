@@ -22,7 +22,7 @@ for (var i = 0; i < elements.length; i++) {
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(item);
+	tg.sendData(shopcart);
 });
 
 
