@@ -6,14 +6,16 @@ tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
 let item = "";
-wrapper = document.getElementsByClassName('inner');
-wrapper.addEventListener('click', (event) => {
-  const isButton = event.target.nodeName === 'BUTTON';
-  if (!isButton) {
-    return;
-  }
-tg.sendData(event.target.id);
-})
+var elements = document.getElementsByClassName("classname");
+
+var myFunction = function() {
+    var attribute = this.getAttribute("data-myattribute");
+    alert(attribute);
+};
+
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', myFunction, false);
+}
 
 
 
