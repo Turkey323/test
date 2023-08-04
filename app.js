@@ -6,7 +6,7 @@ tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
 let item = "";
-const wrapper = document.getElementsByClassName('inner');
+wrapper = document.getElementsByClassName('inner');
 wrapper.addEventListener('click', (event) => {
   const isButton = event.target.nodeName === 'BUTTON';
   if (!isButton) {
