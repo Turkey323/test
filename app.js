@@ -24,7 +24,7 @@ for (var i = 0; i < elements.length; i++) {
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
-    tg.sendData(shopcart);
+    tg.sendData("Лохич");
 });
 
 let usercard = document.getElementById("usercard");
