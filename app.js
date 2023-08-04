@@ -1,5 +1,5 @@
 let tg = window.Telegram.WebApp;
-const shopcart = [];
+let shopcart = [];
 let totalprice = 0;
 tg.expand();
 
