@@ -17,6 +17,22 @@ for(var i = 0; i < elms.length; i++)
   elms[i].parentElement.style.display='inline-block'; 
 };
 
+var ShowOthers = function(){
+  console.log("Show chests");
+  HideAll();
+  var elms = document.querySelectorAll("[id*='Others_']");
+for(var i = 0; i < elms.length; i++) 
+  elms[i].parentElement.style.display='inline-block'; 
+};
+
+var ShowEventPasses = function(){
+  console.log("Show chests");
+  HideAll();
+  var elms = document.querySelectorAll("[id*='EventPass_']");
+for(var i = 0; i < elms.length; i++) 
+  elms[i].parentElement.style.display='inline-block'; 
+};
+
 var ShowBundles = function(){
  HideAll();
 var elms = document.querySelectorAll("[id*='Bundles']");
