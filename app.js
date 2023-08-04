@@ -57,7 +57,7 @@ var HideAll = function() {
 }
 var ClearShopCart = function() {
     shopcart = [];
-    if (tg.initDataUnsafe.user.username != null)
+    if (tg.initDataUnsafe != null)
     {
     shopcart.push(tg.initDataUnsafe.user.username);
     }
