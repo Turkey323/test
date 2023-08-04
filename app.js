@@ -6,7 +6,7 @@ tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
 let item = "";
-var elements = document.getElementsByClassName("classname");
+var elements = document.getElementsByClassName("item");
 
 var myFunction = function() {
      console.log('123');
