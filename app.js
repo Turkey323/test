@@ -1,6 +1,6 @@
 let tg = window.Telegram.WebApp;
 const shopcart = [];
-var totalprice = 0;
+let totalprice = 0;
 tg.expand();
 
 tg.MainButton.textColor = '#FFFFFF';
