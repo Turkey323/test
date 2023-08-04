@@ -18,7 +18,11 @@ var ShowChests = function(){
 
 
 var HideAll = function(){
-document.getElementsByClassName("inner")[0].style.display = 'none';
+elms = document.querySelectorAll("[class='item']");
+for(var i = 0; i < elms.length; i++) 
+  {
+  elms[i].parentElement.style.display='inline-block'; 
+  }
 }
 
 var myFunction = function(event) {
