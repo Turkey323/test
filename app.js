@@ -75,7 +75,7 @@ var myFunction = function(event) {
     {
         event.srcElement.innerHTML = "0";
     }
-    event.srcElement.innerHTML = (parseInt(event.srcElement.innerHTML)+1).toString();
+    event.srcElement.innerHTML = parseInt(event.srcElement.value) + "р. ("(parseInt(event.srcElement.innerHTML)+1).toString() +")";
     console.log("Вы выбрали товара на " + totalprice + " рублей!");
     console.log(shopcart.join(':'));
     tg.MainButton.setText("Вы выбрали товара на " + totalprice + " рублей!");
