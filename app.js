@@ -58,7 +58,7 @@ var HideAll = function() {
 var ClearShopCart = function() {
     shopcart = [];
     totalprice = 0;
-    tg.MainButton.setText = "Корзина пуста";
+    tg.MainButton.setText("Корзина пуста");
 };
 var myFunction = function(event) {
     var skinname = event.srcElement.id;
