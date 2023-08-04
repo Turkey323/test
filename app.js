@@ -76,9 +76,9 @@ var myFunction = function(event) {
         event.srcElement.innerHTML = "0";
     }
     event.srcElement.innerHTML = (parseInt(event.srcElement.innerHTML)+1).toString();
-    console.log("Вы выбрали товара на " + totalprice + " рублей.!");
+    console.log("Вы выбрали товара на " + totalprice + " рублей!");
     console.log(shopcart.join(':'));
-    tg.MainButton.setText("Вы выбрали товара на " + totalprice + " рублей.!");
+    tg.MainButton.setText("Вы выбрали товара на " + totalprice + " рублей!");
 };
 
 for (var i = 0; i < elements.length; i++) {
