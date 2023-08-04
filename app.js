@@ -8,7 +8,7 @@ tg.MainButton.color = '#2cab37';
 tg.MainButton.show();
 let item = "";
 var elements = document.getElementsByClassName("btn");
-var ShowChests() { console.log("Выбрали сундучки") };
+var ShowChests() = function(){ console.log("Выбрали сундучки") };
 
 var myFunction = function(event) {
     shopcart.push(event.srcElement.id);
