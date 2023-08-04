@@ -5,7 +5,7 @@ tg.expand();
 
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
-tg.MainButton.show();
+
 let item = "";
 var elements = document.getElementsByClassName("btn");
 
@@ -59,6 +59,7 @@ var ClearShopCart = function() {
     location.reload();
 };
 var myFunction = function(event) {
+    tg.MainButton.show();
     var skinname = event.srcElement.id;
     if (event.srcElement.id.includes("Skins_"))
     {
