@@ -12,7 +12,6 @@ var elements = document.getElementsByClassName("btn");
 var myFunction = function(event) {
     shopcart.push(event.srcElement.id);
     totalprice = totalprice + parseInt(event.srcElement.innerHTML);
-    usercard.innerHTML = "Всего на: " + totalprice + " рублей.";
     tg.MainButton.setText("Вы выбрали товара на " + totalprice + " рублей.!");
 
 };
@@ -27,5 +26,4 @@ Telegram.WebApp.onEvent("mainButtonClicked", function() {
     tg.sendData(shopcart.join(':'));
 });
 
-let usercard = document.getElementById("usercard");
-let p = document.createElement("p");
+
