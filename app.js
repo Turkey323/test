@@ -28,7 +28,7 @@ var HideAll = function(){
 elms = document.querySelectorAll("[class='item']");
 for(var i = 0; i < elms.length; i++) 
   {
-  elms[i].style.display='inline-block'; 
+  elms[i].style.display='none'; 
   }
 }
 
