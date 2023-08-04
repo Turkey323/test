@@ -8,6 +8,7 @@ tg.MainButton.color = '#2cab37';
 tg.MainButton.show();
 let item = "";
 var elements = document.getElementsByClassName("btn");
+
 var ShowChests = function(){
   HideAll();
 var elms = document.querySelectorAll("[id*='Chests']");
@@ -15,26 +16,6 @@ for(var i = 0; i < elms.length; i++)
   elms[i].parentElement.style.display='inline-block'; 
 };
 
-var ShowBundles = function(){
-  HideAll();
-var elms = document.querySelectorAll("[id*='Bundles']");
-for(var i = 0; i < elms.length; i++) 
-  elms[i].parentElement.style.display='inline-block'; 
-};
-
-var ShowOthers = function(){
-  HideAll();
-var elms = document.querySelectorAll("[id*='Others']");
-for(var i = 0; i < elms.length; i++) 
-  elms[i].parentElement.style.display='inline-block'; 
-};
-
-var ShowEventPasses = function(){
-  HideAll();
-var elms = document.querySelectorAll("[id*='EventPass']");
-for(var i = 0; i < elms.length; i++) 
-  elms[i].parentElement.style.display='inline-block'; 
-};
 
 
 var HideAll = function(){
