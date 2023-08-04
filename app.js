@@ -4,7 +4,8 @@ tg.expand();
 
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
-
+async function start() {
+	
 olditemslist = document.getElementsByClassName("inner")[0];
 response = await fetch("1.json");
 item = await response.json();
@@ -14,7 +15,7 @@ for (let index = 0; index < item.length; index++) {
 	temptext += '<div class="item"><img src="' + item[index].id + '.png" alt="" class="img"> <p><center>' + item[index].itemname + '</center></p><button class="btn" id="'+item[index].id + '">Добавить</button></div>'
 }
 olditemslist.innerHTML = temptext;
-
+}
 let item = "";
 var elements = document.getElementsByClassName("btn");
 
@@ -35,7 +36,13 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 
 
 
+(async() => {
+  console.log('before start');
 
+  await start();
+  
+  console.log('after start');
+})();
 
 
 
