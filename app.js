@@ -57,12 +57,17 @@ var HideAll = function() {
 }
 
 var myFunction = function(event) {
-    shopcart.push(event.srcElement.id);
+    var skinname = event.srcElement.id;
+    if (event.srcElement.id.includes("Skins_"))
+    {
+        console.log("Добавили скинчик");
+      skinname = window.prompt("Введите название образа","") + "_"+parseInt(event.srcElement.innerHTML);
+    }
+    shopcart.push(skinname);
     totalprice = totalprice + parseInt(event.srcElement.innerHTML);
     console.log("Вы выбрали товара на " + totalprice + " рублей.!");
     console.log(shopcart.join(':'));
     tg.MainButton.setText("Вы выбрали товара на " + totalprice + " рублей.!");
-
 };
 
 for (var i = 0; i < elements.length; i++) {
