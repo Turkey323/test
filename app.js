@@ -11,7 +11,7 @@ var elements = document.getElementsByClassName("btn");
 
 var myFunction = function(event) {
     shopcart.push(event.srcElement.id);
-	totalprice= totalprice + event.srcElement.price;
+	totalprice= totalprice + parseInt(event.srcElement.innerHTML);
 	tg.MainButton.setText("Всего на: "+ totalprice + " рублей.");
 };
 
