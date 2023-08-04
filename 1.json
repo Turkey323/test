@@ -36,17 +36,17 @@
   },  
   {
     "itemname": "Боевая душа Пайк Престижный",
-    "id": "EventPass_0",
+    "id": "Others_0",
     "price": 1000
   },  
   {
     "itemname": "Случайный осколок чемпиона (40 штук)",
-    "id": "EventPass_1",
+    "id": "Others_1",
     "price": 1000
   },  
   {
     "itemname": "Боевая душа Шако Престижный",
-    "id": "EventPass_2",
+    "id": "Others_2",
     "price": 1000
   },  
   {
@@ -68,5 +68,25 @@
     "itemname": "Набор «Непревзойденная охотница за головами»",
     "id": "Bundles_3",
     "price": 400
+  },  
+  {
+    "itemname": "Пропуск Боевых душ 2023",
+    "id": "EventPass_0",
+    "price": 300
+  },  
+  {
+    "itemname": "Набор пропуска Боевых душ 2023",
+    "id": "EventPass_1",
+    "price": 450
+  },  
+  {
+    "itemname": "Пропуск события «Боевые души» для TFT",
+    "id": "EventPass_2",
+    "price": 300
+  },  
+  {
+    "itemname": "Пропуск+ TFT «Другая Рунтерра»",
+    "id": "EventPass_3",
+    "price": 650
   }
 ]
