@@ -12,7 +12,7 @@ var elements = document.getElementsByClassName("btn");
 var ShowChests = function(){
   console.log("Show chests");
   HideAll();
-  var elms = document.querySelectorAll("[id*='Chests']");
+  var elms = document.querySelectorAll("[id*='Chests_']");
 for(var i = 0; i < elms.length; i++) 
   elms[i].parentElement.style.display='inline-block'; 
 };
