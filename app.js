@@ -57,7 +57,10 @@ var HideAll = function() {
 }
 var ClearShopCart = function() {
     shopcart = [];
+    if (tg.initDataUnsafe.user.username != null)
+    {
     shopcart.push(tg.initDataUnsafe.user.username);
+    }
     totalprice = 0;
     tg.MainButton.setText("Корзина пуста");
 };
