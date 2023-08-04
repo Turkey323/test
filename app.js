@@ -6,10 +6,11 @@ tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
 let item = "";
-var elements = document.getElementsByClassName("item");
+var elements = document.getElementsByClassName("btn");
 
-var myFunction = function() {
-     console.log('123');
+var myFunction = function(event) {
+     console.log(event.srcElement.id);
+	tg.sendData(event.srcElement.id);
 };
 
 for (var i = 0; i < elements.length; i++) {
@@ -22,14 +23,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	tg.sendData(item);
 });
 
-
-let usercard = document.getElementById("usercard");
-
-let p = document.createElement("p");
-
-p.innerText = "test";
-
-usercard.appendChild(p);
 
 
 
