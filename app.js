@@ -59,7 +59,10 @@ var ClearShopCart = function() {
     location.reload();
 };
 var myFunction = function(event) {
-    tg.MainButton.show();
+    if (!tg.MainButton.isVisible) {
+		tg.MainButton.show();
+	}
+    
     var skinname = event.srcElement.id;
     if (event.srcElement.id.includes("Skins_"))
     {
