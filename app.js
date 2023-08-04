@@ -17,7 +17,12 @@ for(var i = 0; i < elms.length; i++)
   elms[i].parentElement.style.display='inline-block'; 
 };
 
-
+var ShowBundles = function(){
+ HideAll();
+var elms = document.querySelectorAll("[id*='Bundles']");
+for(var i = 0; i < elms.length; i++) 
+  elms[i].parentElement.style.display='inline-block'; 
+};
 
 var HideAll = function(){
 elms = document.querySelectorAll("[class='item']");
