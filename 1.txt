@@ -1,0 +1,10 @@
+user1 100
+user2 80
+user3 60
+user4 75
+user5 100
+user6 80
+user7 60
+user8 75
+user9 12
+user10 13
