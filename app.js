@@ -10,11 +10,12 @@ let item = "";
 var elements = document.getElementsByClassName("btn");
 
 var myFunction = function(event) {
-	tg.sendData("Всего на: "+ totalprice + " рублей.");
     shopcart.push(event.srcElement.id);
 	totalprice= totalprice + parseInt(event.srcElement.innerHTML);
 	tg.MainButton.setText("Всего на: "+ totalprice + " рублей.");
 	usercard.innerHTML = "Всего на: "+ totalprice + " рублей.";
+		tg.MainButton.setText("Вы выбрали товара на "+ totalprice + " рублей.!");
+		tg.MainButton.show();
 };
 
 for (var i = 0; i < elements.length; i++) {
