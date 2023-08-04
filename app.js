@@ -56,9 +56,7 @@ var HideAll = function() {
     }
 }
 var ClearShopCart = function() {
-    shopcart = [];
-    totalprice = 0;
-    tg.MainButton.setText("Корзина пуста");
+    location.reload();
 };
 var myFunction = function(event) {
     var skinname = event.srcElement.id;
