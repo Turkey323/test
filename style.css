@@ -24,7 +24,7 @@ body {
 	text-align: center;
 }
 
-.btn, .btnType {
+.btn {
 	display: inline-block;
 	padding: 10px 20px;
 	border: none;
@@ -39,6 +39,19 @@ body {
 
 .btn:hover, .btnType:hover {
 	background: lightgreen;
+}
+
+.btnType {
+	padding: 10px 10px;
+	border: none;
+	background: rgb(248, 168, 24);
+	border-radius: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	max-width: 500px;
+	max-height: 50px;
+	transition: background .2s linear;
 }
 
 .usercard {
