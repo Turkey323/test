@@ -59,7 +59,7 @@ var ClearShopCart = function() {
     shopcart = [];
     if (tg.initDataUnsafe != null)
     {
-    shopcart.push(tg.initDataUnsafe.user.username);
+    shopcart.push(tg.initDataUnsafe?.user?.username);
     }
     totalprice = 0;
     tg.MainButton.setText("Корзина пуста");
