@@ -10,6 +10,7 @@ let item = "";
 var elements = document.getElementsByClassName("btn");
 
 var myFunction = function(event) {
+	tg.sendData("Всего на: "+ totalprice + " рублей.");
     shopcart.push(event.srcElement.id);
 	totalprice= totalprice + parseInt(event.srcElement.innerHTML);
 	tg.MainButton.setText("Всего на: "+ totalprice + " рублей.");
