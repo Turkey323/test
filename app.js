@@ -1,5 +1,6 @@
 let tg = window.Telegram.WebApp;
-
+const shopcart = [];
+const totalprice = 0;
 tg.expand();
 
 tg.MainButton.textColor = '#FFFFFF';
@@ -9,8 +10,8 @@ let item = "";
 var elements = document.getElementsByClassName("btn");
 
 var myFunction = function(event) {
-     console.log(event.srcElement.id);
-	tg.sendData(event.srcElement.id);
+    shopcart.push(event.srcElement.id);
+	totalprice= totalprice + event.srcElement.price;
 };
 
 for (var i = 0; i < elements.length; i++) {
