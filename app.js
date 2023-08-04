@@ -65,7 +65,7 @@ var myFunction = function(event) {
     if (event.srcElement.id.includes("Skins_"))
     {
         console.log("Добавили скинчик");
-      skinname = window.prompt("Введите название образа","") + "_"+parseInt(event.srcElement.innerHTML);
+      skinname = event.srcElement.id + "*" + window.prompt("Введите название образа","");
     }
     shopcart.push(skinname);
     totalprice = totalprice + parseInt(event.srcElement.innerHTML);
