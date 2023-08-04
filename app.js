@@ -9,10 +9,15 @@ tg.MainButton.show();
 let item = "";
 var elements = document.getElementsByClassName("btn");
 var ShowChests = function(){
+  HideAll();
 var elms = document.querySelectorAll("[id*='Chests']");
 for(var i = 0; i < elms.length; i++) 
   elms[i].parentElement.style.display='inline-block'; 
 };
+
+var HideAll = function(){
+document.getElementsByClassName("inner")[0].style.display = 'none';
+}
 
 var myFunction = function(event) {
     shopcart.push(event.srcElement.id);
