@@ -63,5 +63,20 @@
     "itemname": "Эпический образ",
     "id": "Skins_3",
     "price": 240
+  },
+  {
+    "itemname": "Урфик",
+    "id": "Others_0",
+    "price": 2000
+  },
+  {
+    "itemname": "Эмоция «Денежные мешки»",
+    "id": "Others_1",
+    "price": 1000
+  },
+  {
+    "itemname": "Эмоция «Кристальный дождь»",
+    "id": "Others_2",
+    "price": 666
   }
 ]
